@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'ADTAA/loginReg_style.css' %}" />
+
+
+<div class="reg-page">
+    <div class="form">
+        <form class="register-form">
+            <h1>Add New Class</h1>
+            <input type="courseNum" placeholder="Course Number"/>
+            <input type="courseTitle" placeholder="Course Title"/>
+            <select id="meetingDays" name="Meeting Days">
+                <option value="" disabled selected>Select Meeting Days</option>
+                <option value="meetingDays">MWF</option>
+                <option value="meetingDays">TR</option>
+            </select>
+            <input type="meetingTimes" placeholder="Meeting Times"/>
+            <input type="classDiscipline" placeholder="Class Discipline" />
+            <button>Add Class</button>
+            <p class="message"><a href="http://127.0.0.1:8000/ADTAA/">Edit Class?</a>
+        </form>
+    </div>
+</div>

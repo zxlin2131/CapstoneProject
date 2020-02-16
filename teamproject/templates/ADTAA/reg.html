@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'ADTAA/loginReg_style.css' %}" />
+
+<div class="reg-page">
+    <div class="form">
+        <form class="register-form">
+            <h1>Registration Page</h1>
+            <select id="userType" name="User Type">
+                <option value="" disabled selected>Select a User Type</option>
+                <option value="admin">Admin</option>
+                <option value="scheduler">Scheduler</option>
+            </select>
+            <input type="password" placeholder="Email"/>
+            <input type="text" placeholder="First Name"/>
+            <input type="text" placeholder="Last Name"/>
+            <input type="secQuestion1" placeholder="What primary school did you attend?"/>
+            <input type="secQuestion2" placeholder="What is street did you live on as a child?"/>
+            <button>Register</button>
+            <p class="message">Already registered? <a href="http://127.0.0.1:8000/ADTAA/">Sign In</a></p>
+        </form>
+    </div>
+</div>
